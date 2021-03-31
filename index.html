@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Тема 27: Массивы в JavaScript</h1>
+    <form action="#" method="GET" class="taskform">
+      <fieldset class="taskform__taskunit" id="task1">
+        <legend>Задание №1</legend>
+        <p>
+          Создать массив «Список покупок». Каждый элемент массива является объектом, который содержит название продукта, необходимое количество и куплен или нет. Написать несколько функций для работы с таким массивом.
+          Вывод всего списка на экран таким образом, чтобы сначала шли некупленные продукты, а потом – купленные.
+          Добавление покупки в список. Учтите, что при добавлении покупки с уже существующим в списке продуктом, необходимо увеличивать количество в существующей покупке, а не добавлять новую.
+          Покупка продукта. Функция принимает название продукта и отмечает его как купленный.
+        </p>
+        <div class="buttonsblock">
+          <button onclick="addStuff()">
+            Edit shopping list
+          </button>
+          <button onclick="payForStuff()">
+            Pay Off
+          </button>
+          <button onclick="viewShoppingList()">
+            View Shopping List
+          </button>
+        </div>
+      </fieldset>
+
+      <fieldset class="taskform__taskunit" id="task2">
+        <legend>Задание №2</legend>
+        <p>
+            Создать объект, хранящий в себе отдельно числитель и знаменатель дроби, и следующие функции для работы с этим объектом: 
+            <ul>
+              <li>
+                Функция сложения 2-х объектов-дробей;
+              </li>
+              <li>
+                Функция вычитания 2-х объектов-дробей;
+              </li>
+              <li>
+                Функция умножения 2-х объектов-дробей;
+              </li>
+              <li>
+                Функция деления 2-х объектов-дробей;
+              </li>
+              <li>
+                Функция сокращения объекта-дроби.
+              </li>
+            </ul>
+        </p>
+        <div class="buttonsblock">
+          <button onclick="initFractions()">
+            Initialize Fractions
+          </button>
+          <button onclick="addFractions()">
+            Add Fractions
+          </button>
+          <button onclick="substractFractions()">
+            Substract Fractions
+          </button>
+          <button onclick="multiplyFractions()">
+            Multiply Fractions
+          </button>
+          <button onclick="divideFractions()">
+            Divide Fractions
+          </button>
+          <button onclick="cancelFraction()">
+            Cancel Fraction
+          </button>
+        </div>
+      </fieldset>
+      <fieldset class="taskform__taskunit" id="task3">
+        <legend>Задание №3</legend>
+        <p>
+          Создать объект, описывающий время (часы, минуты, секунды), и следующие функции для работы с этим объектом: 
+          <ul>
+            <li>
+              Функция вывода времени на экран;
+            </li>
+            <li>
+              Функция изменения времени на переданное количество секунд;
+            </li>
+            <li>
+              Функция изменения времени на переданное количество минут;
+            </li>
+            <li>
+              Функция изменения времени на переданное количество часов.
+            </li>
+          </ul>
+        </p>
+        <div class="buttonsblock">
+          <button onclick="initTime()">
+            Initialize Time
+          </button>
+          <button onclick="adjustSeconds()">
+            Adjust Seconds
+          </button>
+          <button onclick="adjustMinutes()">
+            Adjust Minutes
+          </button>
+          <button onclick="adjustHours()">
+            Adjust Hours
+          </button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
