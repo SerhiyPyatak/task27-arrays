@@ -35,43 +35,35 @@
       <fieldset class="taskform__taskunit" id="task2">
         <legend>Задание №2</legend>
         <p>
-            Создать объект, хранящий в себе отдельно числитель и знаменатель дроби, и следующие функции для работы с этим объектом: 
-            <ul>
-              <li>
-                Функция сложения 2-х объектов-дробей;
-              </li>
-              <li>
-                Функция вычитания 2-х объектов-дробей;
-              </li>
-              <li>
-                Функция умножения 2-х объектов-дробей;
-              </li>
-              <li>
-                Функция деления 2-х объектов-дробей;
-              </li>
-              <li>
-                Функция сокращения объекта-дроби.
-              </li>
-            </ul>
+          Создать массив, описывающий чек в магазине. Каждый элемент массива состоит из названия товара, количества и цены за единицу товара. Написать следующие функции:
+          Распечатка чека на экран;
+          Подсчет общей суммы покупки;
+          Получение самой дорогой покупки в чеке;
+          Подсчет средней стоимости одного товара в чеке.
+        </p>
+        <p>
+          Для создания чека выполните (задание №1):
+          <ul>
+            <li>
+              создайте список покупки (кнопка Edit shopping list)
+            </li>
+            <li>
+              Оплатите товар (кнопка Pay Off)
+            </li>
+          </ul>
         </p>
         <div class="buttonsblock">
-          <button onclick="initFractions()">
-            Initialize Fractions
+          <button onclick="printTheBill()">
+            Print the bill
           </button>
-          <button onclick="addFractions()">
-            Add Fractions
+          <button onclick="totalPayment()">
+            Total Payment
           </button>
-          <button onclick="substractFractions()">
-            Substract Fractions
+          <button onclick="mostExpensive()">
+            Most Expensive
           </button>
-          <button onclick="multiplyFractions()">
-            Multiply Fractions
-          </button>
-          <button onclick="divideFractions()">
-            Divide Fractions
-          </button>
-          <button onclick="cancelFraction()">
-            Cancel Fraction
+          <button onclick="averagePrice()">
+            Average Price
           </button>
         </div>
       </fieldset>
