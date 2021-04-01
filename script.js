@@ -14,7 +14,6 @@ let Stuff = {
 
 let shoppingList = [];
 let bill = [];
-let totalFee = 0;
 
 function addStuff() {
 	do {
@@ -65,15 +64,43 @@ function printTheBill() {
 	alert('You can view shopping list in console!');
 }
 
-function totalPayment() {
+function getTotalPayment() {
+	let totalFee = 0;
 	bill.forEach(
 		element => totalFee += element.price * element.amount
 	);
-	alert(`Total charge of the bill is ${totalFee}`);
+	return totalFee;
+}
+
+function getPositionsAmount() {
+	let positionsAmount = 0;
+	bill.forEach(
+		element => positionsAmount += element.amount
+	);
+	return positionsAmount;
+}
+
+function totalPayment() {
+	total = getTotalPayment();
+	alert(`Total charge of the bill is ${total}`);
 }
 
 function averagePrice() {
-	alert(`Average price is ${totalFee / bill.length}`);
+	alert(`Average price is ${getTotalPayment() / getPositionsAmount()}`);
+}
+
+function mostExpensive() {
+	let mostExpensiv = Object.create(Stuff);
+	bill.forEach(
+		(element) => {
+			if ((element.amount * element.price) > (mostExpensiv.amount * mostExpensiv.price)) {
+				mostExpensiv.amount = element.amount;
+				mostExpensiv.price = element.price;
+				mostExpensiv.name = element.name;
+			}
+		}
+	);
+	alert(`Most expensive is ${mostExpensiv.name} quantity ${mostExpensiv.amount} price ${mostExpensiv.price}`);
 }
 
 //-------------------------------
